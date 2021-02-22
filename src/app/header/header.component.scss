@@ -1,0 +1,53 @@
+@import '../assets/colors';
+
+.example-sidenav-content {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: none;
+}
+
+.example-sidenav {
+  padding: 20px;
+  width: 20%;
+}
+.example-container {
+  width: 100%;
+  height: 100vh;
+  border: none;
+}
+.copy{
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+}
+.open_button{
+  display: block;
+  margin-top: 25px;
+}
+header{
+  background-color: $dark;
+  color: whitesmoke;
+  .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    a{
+      font-size: 28px;
+      color: $green_shiny;
+      text-decoration: none;
+      text-transform: uppercase;
+      margin: 0 15px;
+    }
+    .logo{
+      span{
+        font-size: 28px;
+        color: whitesmoke;
+        text-transform: uppercase;
+      }
+    }
+  }
+}

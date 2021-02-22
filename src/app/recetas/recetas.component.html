@@ -1,0 +1,30 @@
+<h2>Recetas</h2>
+<div class="row">
+  <div class="col-sm-3" *ngFor = 'let receta of recetas'>
+    <div class="receta">
+      <mat-card class="example-card">
+        <mat-card-header class='title'>
+          <mat-card-title>{{receta.title}}</mat-card-title>
+          <mat-card-subtitle>Ready in {{receta.readyInMinutes}} min</mat-card-subtitle>
+        </mat-card-header>
+        <div *ngIf = 'receta.image !== "" ; then img_true ; else img_false'></div>
+        <ng-template #img_true>
+          <img src={{receta.image}} mat-card-image class='img-fluid' alt="Receta app">
+        </ng-template>
+        <ng-template #img_false>
+          <p>no</p>
+        </ng-template>
+        <p class='likes'>Likes {{receta.aggregateLikes}}</p>
+        <mat-card-content>
+          <ul class='diet' *ngFor = 'let diet of toArray(receta.diets)'>
+            <li>{{diet}}</li>
+          </ul>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-button [routerLink]="['receta', receta.id]" routerLinkActive="active">Ver</button>
+          <button mat-button>Guardar</button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+  </div>
+</div>

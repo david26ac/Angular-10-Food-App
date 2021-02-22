@@ -1,0 +1,31 @@
+@import '../assets/colors';
+
+h2{
+  margin-top: 45px;
+  font-size: 36px;
+  line-height: 42px;
+}
+.image{
+  background-color: $dark;
+  margin-bottom: 25px;
+}
+.mat-button, .mat-icon-button, .mat-stroked-button, .mat-flat-button{
+  border: 1px solid #ececec;
+  margin-bottom: 15px;
+}
+.mat-card-actions {
+  margin-left: 0;
+  margin-right: 0;
+  padding: 8px 0;
+}
+ul,ol{
+  margin-bottom: 5px;
+  padding-left: 15px;
+}
+ol{
+  margin-bottom: 5px;
+  padding-left: 15px;
+}
+.intructions{
+  margin-top: 15px;
+}

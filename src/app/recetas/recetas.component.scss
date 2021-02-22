@@ -1,0 +1,42 @@
+@import '../assets/colors';
+
+.mat-card-header .mat-card-title{
+  font-size: 1.2em;
+}
+.ng-star-inserted{
+  padding-left: 0;
+  ul{
+    margin-bottom: 0;
+    li{
+      list-style: none;
+      font-size: 0.9em;
+      text-transform: capitalize;
+    }
+  }
+}
+.receta{
+  margin-bottom: 25px;
+  .likes{
+    color: $light_dark;
+    padding: 15px 15px 0;
+  }
+  .diet{
+    color: $green;
+    padding: 0 15px;
+  }
+  .summary{
+    font-size: 0.8em;
+    line-height: 1.3em;
+  }
+}
+.mat-button, .mat-icon-button, .mat-stroked-button, .mat-flat-button{
+  border: 1px solid #ececec;
+}
+.ingredientes{
+  padding-left: 0;
+}
+h2{
+  color: $light_dark;
+  font-size: 28px;
+}
+

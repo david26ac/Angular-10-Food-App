@@ -1,0 +1,38 @@
+/* You can add global styles to this file, and also import other style files */
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import 'app/assets/colors';
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
+.title .mat-card-header-text{
+  margin: 0;
+}
+.mat-drawer-content {
+  padding: 25px 0;
+}
+main{
+  .mat-card{
+    padding: 0px;
+    .mat-card-actions:last-child{
+      padding-bottom: 15px;
+    }
+  }
+  .mat-card-image{
+    margin:  0;
+  }
+  .mat-card-actions{
+    padding: 15px;
+  }
+}
+.mat-card>:first-child{
+  padding: 15px 15px 0 15px;
+  background-color: $green_shiny;
+  border-radius: 4px 4px  0 0 ;
+}
+.example-form-field {
+  width: 500px;
+}
