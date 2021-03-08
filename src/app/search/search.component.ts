@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { GethttpService } from '../gethttp.service'
+import { GethttpService } from '../key/gethttp.service'
 
 
 @Component({
