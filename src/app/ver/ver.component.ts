@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute, ParamMap } from '@angular/router';
-import { GethttpService } from '../gethttp.service'
+import { GethttpService } from '../key/gethttp.service'
 
 
 @Component({
