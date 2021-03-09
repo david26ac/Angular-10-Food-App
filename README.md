@@ -1,1 +1,1 @@
-Angular Food App.
+Developing a Food App with Angular 10.
