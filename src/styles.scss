@@ -19,6 +19,7 @@ main{
   .mat-card{
     padding: 0px;
     .mat-card-actions:last-child{
+      padding: 15px;
       padding-bottom: 15px;
     }
   }
@@ -37,3 +38,16 @@ main{
 .example-form-field {
   width: 500px;
 }
+button.mat-button{
+  border: 1px solid #ececec;
+}
+.mat-form-field-appearance-legacy .mat-form-field-underline{
+  background-color: $dark;
+}
+.mat-form-field.mat-focused .mat-form-field-ripple{
+  background-color: $light_dark;
+}
+.mat-form-field.mat-focused .mat-form-field-label {
+  color: $light_dark;
+}
+

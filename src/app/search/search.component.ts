@@ -21,14 +21,15 @@ export class SearchComponent implements OnInit {
     this.httpService.get_recetas('/complexSearch/?apiKey=' + this.httpService.key + '&query=' + search)
     .subscribe(datos => {
 
-      if(datos.results.length < 1){
+      this.datos_search = datos['results'];
+      console.log(this.datos_search)
+      if(this.datos_search.length < 1){
         this.not_found = true
         console.log(this.not_found)
 
       }else{
         this.not_found = false
         console.log(this.not_found)
-        this.datos_search = datos.results;
       }
     });;
   }

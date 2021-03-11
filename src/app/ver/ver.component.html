@@ -1,26 +1,30 @@
 <app-header></app-header>
 <div class="container">
-  <div class="row">
-    <div class="col-sm-12">
-        <h2>{{datos_recetas.title}}</h2>
-        <mat-card-actions>
-          <button mat-button>Guardar</button>
-        </mat-card-actions>
-        <p [innerHTML] ='datos_recetas.summary'></p>
-        <p class='ready'>Ready in {{datos_recetas.readyInMinutes}} min</p>
-        <div class="image">
-          <img src={{datos_recetas.image}} alt="">
-        </div>
-        <ul>
-          <li *ngFor = 'let diet of datos_recetas.diets'>{{diet}}</li>
-        </ul>
+  <div class="receta">
+    <div class="row">
+      <div class="col-sm-12">
+          <h2>{{datos_recetas.title}}</h2>
+          <mat-card-actions>
+            <button mat-button>Guardar</button>
+          </mat-card-actions>
+          <p [innerHTML] ='datos_recetas.summary'></p>
+          <p class='ready'>Ready in {{datos_recetas.readyInMinutes}} min</p>
+          <div class="image">
+            <img src={{datos_recetas.image}} class='img-fluid' alt="">
+          </div>
+          <ul>
+            <li *ngFor = 'let diet of datos_recetas.diets'>{{diet}}</li>
+          </ul>
+      </div>
     </div>
-  </div>
-  <div class="row">
-    <div class="col-sm-12">
-      <div [innerHTML]='datos_recetas.instructions' class="intructions">
+    <div class="row">
+      <div class="col-sm-12">
+        <div [innerHTML]='datos_recetas.instructions' class="intructions">
+        </div>
       </div>
     </div>
   </div>
+
 </div>
+
 

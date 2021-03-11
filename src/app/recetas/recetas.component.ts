@@ -16,6 +16,7 @@ export class RecetasComponent implements OnInit {
   name:string=''
   ngOnInit(): any {
     this.get_recetas();
+    console.log('fired recetas component')
   }
   get_recetas(){
     let url:string = '/random/?apiKey=' + this.httpService.key + '&number=8'

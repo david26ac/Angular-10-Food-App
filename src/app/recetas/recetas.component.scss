@@ -4,7 +4,6 @@
   font-size: 1.2em;
 }
 .ng-star-inserted{
-  padding-left: 0;
   ul{
     margin-bottom: 0;
     li{
@@ -39,4 +38,8 @@ h2{
   color: $light_dark;
   font-size: 28px;
 }
-
+@media screen and (max-width: 425px){
+  .ng-star-inserted{
+    padding-left: 15px;
+  }
+}

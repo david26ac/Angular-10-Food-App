@@ -21,3 +21,14 @@
     line-height: 1.3em;
   }
 }
+.mat-card-actions{
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
+}
+@media screen and (max-width: 425px){
+  .example-full-width{
+    width: 100%;
+  }
+
+}
