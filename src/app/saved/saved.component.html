@@ -1,0 +1,27 @@
+<section>
+  <div class="container">
+    <h2>Your recipes</h2>
+    <div class="row">
+      <div class="col-sm-4" *ngFor = 'let receta of recetas'>
+        <div class="receta">
+          <mat-card class="example-card">
+            <mat-card-header class='title'>
+              <mat-card-title>{{receta.name}}</mat-card-title>
+            </mat-card-header>
+            <div *ngIf = 'receta.image !== "" ; then img_true ; else img_false'></div>
+            <ng-template #img_true>
+              <img src={{receta.imgUrl}} mat-card-image class='img-fluid' alt="Receta app">
+            </ng-template>
+            <ng-template #img_false>
+              <p>no</p>
+            </ng-template>
+            <mat-card-actions>
+              <button mat-button [routerLink]="['../../receta', receta.id_api]" routerLinkActive="active">Ver</button>
+            </mat-card-actions>
+          </mat-card>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+

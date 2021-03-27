@@ -1,0 +1,36 @@
+@import '../assets/colors';
+
+.receta{
+  margin-bottom: 25px;
+  overflow: hidden;
+  .likes{
+    color: $light_dark;
+    padding: 15px 15px 0;
+  }
+  .diet{
+    color: $green;
+    padding: 0 15px;
+  }
+  .summary{
+    font-size: 0.8em;
+    line-height: 1.3em;
+  }
+  img{
+    max-width: 100%;
+    margin: 0 auto;
+  }
+}
+.mat-card{
+  padding: 0 0 15px;
+}
+.mat-card-actions{
+  margin-bottom: 0;
+  padding: 0;
+  margin: 15px 0;
+}
+.mat-button{
+  width: 100%;
+}
+section{
+  padding: 25px 0;
+}

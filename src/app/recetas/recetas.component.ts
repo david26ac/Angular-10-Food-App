@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { GethttpService } from '../key/gethttp.service'
 import {MatCardModule} from '@angular/material/card';
+import { SaveComponent } from '../save/save.component';
 
 @Component({
   selector: 'app-recetas',
@@ -12,6 +13,7 @@ export class RecetasComponent implements OnInit {
   constructor(private httpService : GethttpService) {
 
   }
+  @Input() datos;
   recetas: any = ''
   name:string=''
   ngOnInit(): any {

@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
-
+import { SaveComponent } from './save/save.component'
 import { HttpClientModule } from '@angular/common/http';
 
 //Material
@@ -21,7 +21,7 @@ import { Page404Component } from './page404/page404.component';
 import { SearchComponent } from './search/search.component';
 import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
-
+import { SavedComponent } from './saved/saved.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +32,8 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     VerComponent,
     Page404Component,
     SearchComponent,
+    SaveComponent,
+    SavedComponent,
   ],
   imports:[
     BrowserModule,

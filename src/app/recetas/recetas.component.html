@@ -1,4 +1,4 @@
-<h2>Recetas</h2>
+<h2>Recommended recipes</h2>
 <div class="row">
   <div class="col-sm-4" *ngFor = 'let receta of recetas'>
     <div class="receta">
@@ -21,8 +21,13 @@
           </ul>
         </mat-card-content>
         <mat-card-actions>
-          <button mat-button [routerLink]="['receta', receta.id]" routerLinkActive="active">Ver</button>
-          <button mat-button>Guardar</button>
+          <button mat-button [routerLink]="['receta', receta.id]" routerLinkActive="active">See</button>
+          <app-save [datos] = "{
+            'name' : receta.title,
+            'description' : receta.title,
+            'imgUrl' : receta.image,
+            'id_api' : receta.id
+          }" ></app-save>
         </mat-card-actions>
       </mat-card>
     </div>
