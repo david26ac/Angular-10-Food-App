@@ -1,19 +1,15 @@
 <main>
-  <div class="container">
-    <app-search></app-search>
-    <mat-drawer-container class="example-container" autosize>
-      <mat-drawer #drawer class="example-sidenav" mode="side">
-        <p *ngIf="showFiller">Lorem, ipsum dolor sit amet consectetur.</p>
-        <a href="">About</a>
-        <a href="">Projects</a>
-        <a href="">Contact</a>
-        <span class="copy">David Acuna</span>
-      </mat-drawer>
-      <div class="example-sidenav-content">
-        <div class="container">
-          <app-recetas></app-recetas>
-        </div>
-      </div>
-    </mat-drawer-container>
-  </div>
+  <app-search></app-search>
+  <mat-drawer-container class="example-container" autosize>
+    <mat-drawer #drawer class="example-sidenav" mode="side">
+      <p *ngIf="showFiller">Lorem, ipsum dolor sit amet consectetur.</p>
+      <a href="">About</a>
+      <a href="">Projects</a>
+      <a href="">Contact</a>
+      <span class="copy">David Acuna</span>
+    </mat-drawer>
+    <div class="example-sidenav-content">
+      <app-recetas></app-recetas>
+    </div>
+  </mat-drawer-container>
 </main>

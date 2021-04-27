@@ -1,5 +1,27 @@
 @import '../assets/colors';
-
+.bg_vector{
+  position: relative;
+  padding: 55px 0;
+  height: 200px;
+  .bg_vector_screen{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: url(../img/bg_vector.png);
+    background-size: cover;
+    opacity: 0.3;
+  }
+}
+.recetas_section{
+  position: relative;
+  top: -55px;
+  h2{
+    margin: 0;
+    margin-bottom: 30px;
+  }
+}
 .mat-card-header .mat-card-title{
   font-size: 1.2em;
 }
@@ -27,6 +49,13 @@
     font-size: 0.8em;
     line-height: 1.3em;
   }
+  .see_button{
+    background-color: $light_dark;
+    color: whitesmoke;
+    margin-right: 5px;
+  }
+  .ready{
+  }
 }
 .mat-button, .mat-icon-button, .mat-stroked-button, .mat-flat-button{
   border: 1px solid #ececec;
@@ -35,8 +64,12 @@
   padding-left: 0;
 }
 h2{
-  color: $light_dark;
+  color: black;
   font-size: 28px;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: $light_dark;
+  color: whitesmoke;
 }
 @media screen and (max-width: 425px){
   .ng-star-inserted{

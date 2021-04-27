@@ -14,7 +14,6 @@ export class HeaderComponent implements OnInit {
   showFiller = false;
   public content:string = 'Show content';
   public nav:string = 'See more';
-  public app_name:string = 'Food App';
 
   show(){
     this.showFiller = !this.showFiller

@@ -39,15 +39,16 @@ header{
       font-size: 28px;
       color: $green_shiny;
       text-decoration: none;
-      text-transform: uppercase;
       margin: 0px;
       margin-left: -15px;
+      span{
+        color: whitesmoke;
+      }
     }
     .logo{
       span{
         font-size: 28px;
         color: whitesmoke;
-        text-transform: uppercase;
       }
     }
   }
